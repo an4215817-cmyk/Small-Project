@@ -1,0 +1,1002 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  padding-top: 70px;
+}
+
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #0b1329;
+  border-bottom: 1px solid #1e293b;
+  z-index: 99;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+  z-index: 99;
+}
+
+/* Logo Section (Float Left) */
+.header-left {
+  float: left;
+  line-height: 70px;
+}
+
+.brand-logo {
+  color: #38bdf8;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-logo .icon-bolt {
+  color: #f59e0b;
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+
+/* Header Right Icons (Float Right) */
+.header-right {
+  float: right;
+  line-height: 70px;
+}
+
+.icon-link {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  top: -50px;
+}
+
+/* Badge លេខ Red Circle ប្រើ Position Absolute */
+.badge {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Search Box Section (នៅកណ្តាល) */
+.header-center {
+  text-align: center;
+  padding-top: 17px;
+}
+
+.search-box {
+  display: inline-block;
+  background-color: #1a233a;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  padding: 3px;
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-input {
+  width: 85%;
+  background-color: #1e293b;
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+.search-button {
+  position: absolute;
+  right: 4px;
+  top: 2.5px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  width: 32px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =================ផ្នែក MENU ================= */
+
+
+.category-header{
+  position:fixed;
+  z-index: 99;
+  margin-top: -25px;
+  width:100%
+  
+}
+
+.header-menu {
+ 
+  height: 70px;
+  background-color: #f6f4f3;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: center;
+  z-index: 99; 
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  z-index: 99;
+}
+
+.cat-item {
+  display: inline-block;
+  margin: 0 4px;         
+}
+
+.cat-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+}
+
+/* ចន្លោះរវាង Icon និងអក្សរ */
+.cat-link i {
+  margin-right: 6px;
+}
+
+
+.cat-link.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+
+.cat-link.flash-sale {
+  color: #dc2626;
+}
+
+.slak{
+  top: 45px;
+  /* margin-bottom: 10px; */
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #114be8;
+  height: 370px;
+  padding: 20px;
+  border-radius: 13px;
+  
+}
+
+
+.left-1 {
+  margin-top: 60px;
+  font-size: 1.2rem;
+  color: #38bdf8;
+  margin-bottom: 10px;
+ 
+}
+
+.left-2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 1.90rem;
+}
+.left-3 {
+  font-size: 1rem;
+  color: #bfcbdd;
+  margin-bottom: 20px;
+}
+.left-4 {
+  display: inline-block;
+  background-color: #F59E0B;
+  color: #1b0303;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Kantumruy Pro", sans-serif;
+}
+.buy{
+  margin-left: 1px;
+}
+
+
+
+.right-1 {
+  position: absolute;
+  display: inline-block;
+  width: 185px;
+  height: 40px;
+  text-align: right;
+  margin-top: -260px;
+  color: white;
+  background-color: #f6460c;
+  border-radius: 10px;
+  padding: 10px;
+  right: 20px;
+  text-align: center;
+}
+
+
+
+.right-2 {
+  position: absolute;
+  display: inline-block;
+  width: 400px;
+  height: 250px;
+  text-align: right;
+  margin-top: -219px;
+  border-radius: 10px;
+  right: 80px;
+  
+}
+
+.right-3{
+  position: absolute;
+  display: inline-block;
+  width: 220px;
+  height: 35px;
+  text-align: right;
+  bottom: 60px;
+  border-radius: 8px;
+  right: 358px;
+  border: 1px solid #ffffff;
+  background-color: #1a233a;
+  text-align: center;
+  padding: 7px;
+  font-size: 0.9rem;
+  margin-bottom: -1px;
+  
+}
+.fa-star{
+  color: #d8eb2c;
+}
+
+.servise{
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0px auto;
+  /* background-color: #2eba35; */
+  /* height: 370px; */
+  /* padding: 20px;  */
+  /* border-radius: 13px; */
+  text-align: center;
+  margin-top: 58px;
+  /* border: 5px solid black; */
+
+}
+
+.sv-1{
+  position: absolute;
+  display: inline-block;
+  color: #38bdf8;
+  font-size: 1.2rem;
+  border:0.5px solid #e2d4d4e6;
+  background-color:#eeeff1;
+  width: 21.5%;
+  border-radius: 7px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+  left: 10px;
+  margin-right: 10px;
+  top: 5px;
+  margin: 0 auto;
+  
+}
+.sv-a{
+  font-size: 15px;
+}
+
+.sv-a1{
+  font-size: 15px;
+}
+
+
+
+.sv-2{
+  position: absolute;
+  display: inline-block;
+  color: #38bdf8;
+  font-size: 1.2rem;
+  border:0.5px solid #e2d4d4e6;
+  background-color:#eeeff1;
+  width: 21.5%;
+  border-radius: 7px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+  top: 5px;
+  left: 318px;
+  margin-right: 10px;
+  margin: 0 auto;
+  /* font-size: 20px; */
+  
+}
+
+.sv-b{
+  font-size: 15px;
+}
+
+.sv-b1{
+  font-size: 15px;
+}
+
+
+.sv-3{
+  position: absolute;
+  display: inline-block;
+  color: #38bdf8;
+  font-size: 1.2rem;
+  border:0.5px solid #e2d4d4e6;
+  background-color:#eeeff1;
+  width: 21.5%;
+  border-radius: 7px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 18px;
+  top: 5px;
+  margin: 0 auto;
+  right: 317px;
+  
+}
+
+.sv-c{
+  font-size: 15px;
+}
+.sv-c1{
+  font-size: 15px;
+}
+
+.sv-4{
+  position: absolute;
+  display: inline-block;
+  color: #38bdf8;
+  font-size: 1.2rem;
+  border:0.5px solid #e2d4d4e6;
+  background-color:#eeeff1;
+  width: 21.5%;
+  border-radius: 7px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+  right: 10px;
+  top: 5px;
+  margin: 0 auto;
+  
+
+}
+
+.sv-d{
+  font-size: 15px;
+}
+.sv-d1{
+  font-size: 15px;
+  
+}
+
+
+
+/* ================= ផ្នែក Product Card (pro-a) ================= */
+
+.produce {
+  width: 90%;
+  max-width: 1200px;
+  margin: 230px auto 40px auto;
+  background-color: transparent;
+}
+
+.fa-fire {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ef4444;
+}
+
+.pro-title {
+  display: inline-block;
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Card ធំ */
+.pro-a {
+  position: relative;
+  width: 280px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 12px;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
+/* ផ្នែករូបភាព */
+.box-1 {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pro-2 {
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.pro-g2{
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.pro-n2{
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+.pro-z2{
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.pro-ah{
+  top:-20px;
+  position: relative;
+  width: 280px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 12px;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
+/* Badge -30% */
+.pro-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e11d48;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Icon បេះដូង Heart */
+.pro-3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  color: #ef4444;
+  text-decoration: none;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  display: block;
+}
+
+/* ផ្នែកព័ត៌មានលម្អិតទំនិញ */
+.box-2 {
+  padding-top: 12px;
+  text-align: left;
+}
+
+.pro-category {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.pro-name {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* Star Rating */
+.star-rating {
+  margin-bottom: 8px;
+}
+
+.star-rating .fa-star {
+  color: #f59e0b;
+  font-size: 0.85rem;
+}
+
+.rating-num {
+  color: #64748b;
+  font-size: 0.8rem;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+/* តម្លៃ (Price) */
+.price-box {
+  margin-bottom: 12px;
+}
+
+.current-price {
+  color: #2563eb;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.old-price {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* ប៊ូតុង បញ្ចូលកញ្ជក */
+.add-to-cart-btn {
+  width: 100%;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-to-cart-btn i {
+  margin-right: 6px;
+}
+
+/* ================= ផ្នែកបន្ថែម Header ទំនិញ និង Badge ================= */
+
+.pro-header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pro-title-box {
+  display: inline-block;
+}
+
+.view-all {
+  float: right;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+/* រៀបចំកាតឲ្យរៀបជួរគ្នាដោយប្រើ inline-block */
+.produce .pro-a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+/* Badge សម្រាប់ Hot និង New */
+.pro-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.hot-badge {
+  background-color: #f59e0b; /* ពណ៌លឿង/ទឹកក្រូចសម្រាប់ Hot */
+}
+
+.new-badge {
+  background-color: #16a34a; /* ពណ៌បៃតងសម្រាប់ New */
+}
+
+
+.box-1 .pro-2 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* ================= ផ្នែកបន្ថែម Header ទំនិញ និង Badge ================= */
+
+/* រៀបចំ Header របស់ផ្នែក Produce */
+.pro-header {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.pro-title-box {
+  display: inline-block;
+}
+
+/* ប៊ូតុង មើលទាំងអស់ នៅខាងស្តាំ */
+.view-all {
+  float: right;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.view-all i {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+
+.produce .pro-a {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+/* ប្រអប់ផ្ទុករូបភាព */
+.box-1 {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* រូបភាពឱ្យរីកពេញប្រអប់ខាងលើដូចរូបគំរូ */
+.pro-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+/* Stylings សម្រាប់ Badge (Hot និង New) */
+.pro-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.hot-badge {
+  color: #ffffff;
+}
+
+.new-badge {
+  color: #ffffff;
+}
+
+/* ================= ផ្នែក FOOTER & PROMO BANNERS ================= */
+
+.footer {
+  margin-top: 60px;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
+/* 1. Promo Banners ខាងលើ */
+.promo-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.promo-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+  color: #ffffff;
+}
+
+.promo-blue {
+  background-color: #1e3a8a;
+  margin-right: 3%;
+}
+
+.promo-green {
+  background-color: #064e3b;
+}
+
+.promo-badge-top {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.promo-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.promo-desc {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.promo-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0f172a;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.promo-btn i {
+  margin-left: 6px;
+}
+
+/* 2. Footer Main Section */
+.footer-main {
+  background-color: #0b1329;
+  color: #94a3b8;
+  padding-top: 50px;
+  position: relative;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+.col-1 { width: 30%; }
+.col-2 { width: 18%; }
+.col-3 { width: 20%; }
+.col-4 { width: 23%; margin-right: 0; }
+
+.footer-logo {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.footer-logo .icon-bolt {
+  color: #38bdf8;
+}
+
+.footer-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.footer-info {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.footer-info i {
+  margin-right: 8px;
+  color: #38bdf8;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
+/* Newsletter Input Box */
+.newsletter-box {
+  position: relative;
+  margin-top: 12px;
+}
+
+.newsletter-input {
+  width: 100%;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 10px 45px 10px 12px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.newsletter-btn {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  width: 34px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 3. Floating Action Buttons (ខាងស្តាំដៃ) */
+.floating-cart {
+  position: fixed;
+  right: 20px;
+  bottom: 75px;
+  background-color: #f59e0b;
+  color: #000000;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  z-index: 99;
+}
+
+.floating-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  line-height: 18px;
+  text-align: center;
+}
+
+.floating-telegram {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  position: fixed;
+  z-index: 99;
+}
+
+.floating-telegram i {
+  margin-right: 6px;
+}
+
+.online-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+/* 4. Footer Bottom (Copyright) */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
